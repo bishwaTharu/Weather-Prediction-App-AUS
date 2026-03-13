@@ -4,6 +4,7 @@ from typing import Optional, Dict, Any
 class WeatherPredictionRequest(BaseModel):
     # Defining core weather features based on standard Australian weather datasets
     # Making them optional to handle partial data, but providing defaults or nulls
+    Location: Optional[str] = None
     MinTemp: Optional[float] = None
     MaxTemp: Optional[float] = None
     Rainfall: Optional[float] = 0.0
@@ -28,6 +29,7 @@ class WeatherPredictionRequest(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
+                "Location": "Sydney",
                 "MinTemp": 13.4,
                 "MaxTemp": 22.9,
                 "Rainfall": 0.6,
