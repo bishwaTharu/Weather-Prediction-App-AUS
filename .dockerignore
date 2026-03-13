@@ -1,0 +1,17 @@
+__pycache__/
+.venv/
+.git/
+.gitignore
+.env
+data/*.csv
+!data/README.md
+assets/*.png
+assets/*.md
+*.joblib
+.ipynb_checkpoints/
+# uv.lock removed so it can be copied into the image
+# uv.lock
+README.md
+test_request.py
+walkthrough.md
+brain/

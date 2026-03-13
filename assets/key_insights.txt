@@ -1,0 +1,10 @@
+KEY INSIGHTS FROM DATA
+======================
+
+The dataset contains a total of 221219 missing values.
+Highly correlated features include:
+  - MinTemp and Temp9am (Correlation: 0.90)
+  - MaxTemp and Temp9am (Correlation: 0.89)
+  - MaxTemp and Temp3pm (Correlation: 0.98)
+  - Pressure9am and Pressure3pm (Correlation: 0.96)
+  - Temp9am and Temp3pm (Correlation: 0.86)
